@@ -1,2 +1,2 @@
-# mobileapp
-Sample REST APP  for testing out RWD
+# RWD sample
+# Goal : To create a sample RWD app using Spring REST + ng + Bootstrap 
