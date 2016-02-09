@@ -1,4 +1,4 @@
-package com.mobileapp;
+package com.rwdapp;
 
 import java.util.ArrayList;
 import java.util.List;

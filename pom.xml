@@ -2,13 +2,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.avnet</groupId>
-	<artifactId>mobileapp</artifactId>
+	<artifactId>rwdapp</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>mobileapp Maven Webapp</name>
+	<name>rwd app Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<build>
-		<finalName>mobileapp</finalName>
+		<finalName>rwdapp</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
