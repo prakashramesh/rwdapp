@@ -1,2 +1,2 @@
 # RWD sample
-# Goal : To create a sample RWD app using Spring REST + ng + Bootstrap 
+# Sample RWD app using Spring REST +ng/ui-grid + Bootstrap 
