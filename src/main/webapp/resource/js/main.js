@@ -1,19 +1,29 @@
-var app = angular.module('app', ['ngTouch', 'ui.grid']);
+var app = angular.module('app', [ 'ngTouch', 'ui.grid' ]);
 
 app.service('dataService', function($http) {
 	delete $http.defaults.headers.common['X-Requested-With'];
-	this.getData = function() {
-	    // $http() returns a $promise that we can add handlers with .then()
-	    return $http({
-	        method: 'GET',
-	        url: 'http://10.81.208.173:8080/rwdapp/rest/get/parts/4',
-	     });
-	 }
-	});
-app.controller('MainCtrl', function($scope, dataService){
+	this.getData = function(part) {
+		// $http() returns a $promise that we can add handlers with .then()
+		return $http({
+			method : 'GET',
+			url : 'http://10.81.208.173:8080/rwdapp/rest/get/parts/'
+					+ part
+		});
+	}
+});
 
-	  $scope.myData = null;
-	  dataService.getData().then(function(dataResponse){
-		  $scope.myData=dataResponse.data;
-	  });
+
+
+app.controller('MainCtrl', function($scope, dataService) {
+	$scope.myData = null;
+	$scope.part =0;
+	dataService.getData($scope.part).then(function(dataResponse) {
+		$scope.myData = dataResponse.data;
 	});
+	
+	$scope.getParts = function() {
+		dataService.getData($scope.part).then(function(dataResponse) {
+			$scope.myData = dataResponse.data;
+		});
+	}
+});

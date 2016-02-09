@@ -49,7 +49,7 @@ public class JSONRestController {
 
 	@RequestMapping(value = "{partCount}", method = RequestMethod.GET)
 	public @ResponseBody List<Part> getParts(@PathVariable int partCount) {
-		return generatedParts.subList(0, partCount-1);
+		return generatedParts.subList(0, partCount);
 	}
 	
 	private void generateParts(){
