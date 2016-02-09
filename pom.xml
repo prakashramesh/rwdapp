@@ -22,7 +22,7 @@
 				<configuration>
 					<scanIntervalSeconds>10</scanIntervalSeconds>
 					<webApp>
-					     <contextPath>/mobileapp</contextPath>
+					     <contextPath>/rwdapp</contextPath>
 					</webApp>	 
 				</configuration>
 			  </plugin>
