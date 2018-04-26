@@ -6,7 +6,7 @@ app.service('dataService', function($http) {
 		// $http() returns a $promise that we can add handlers with .then()
 		return $http({
 			method : 'GET',
-			url : 'http://localhost:8080/rwdapp/rest/get/parts/'
+			url : '/rwdapp/rest/get/parts/'
 					+ part
 		});
 	}
